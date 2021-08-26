@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scaling for Mobile -->
+    <link href="thematics.css" rel="stylesheet"/>
+    <script src="bish-bosh.js"></script>
+    <title>Bish-Bosh</title>
+</head>
+<body>
+    <div class="introtext">
+        <h1 class="white">Bish-Bosh 2.0</h1> 
+        <p class="white">
+            Bish-Bosh listar tal mellan 1 och det du väljer nedan (). <br>
+            Om talet är jämt delbart med ditt valda bish-tal () visas 'Bish' istället för talet.<br>
+            Om talet är jämt delbart med ditt valda bosh-tal () visas 'Bosh' istället för talet.<br>
+            Om talet är jämt delbart med båda dina tal visas 'Bish-Bosh'. istället för talet.
+        </p>
+    </div>
+        <p class="white">Antal nummer: <span id="ID-tal"></span></p>
+        <input type="range" min="1" value="1" max="100" id="tal" oninput="Counter(); inputgen();"/>
+    
+        <p class="white">Bish-nummer: <span id="ID-bish"></span></p>
+        <input type="range" min="0" value="0" max="100" id="bish" oninput="Counter(); inputgen();"/>
+    
+        <p class="white">Bosh-nummer: <span id="ID-bosh"></span></p>
+        <input type="range" min="0" value="0" max="100" id="bosh" oninput="Counter(); inputgen();"/>
+    <div>
+        <ul id="bish-bosh-gen" class="list">
+            <!-- Bish-Bosh Numbers Appear -->
+        </ul>
+    </div>
+</body>
+</html>

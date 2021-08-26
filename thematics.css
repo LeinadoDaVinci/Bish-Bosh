@@ -1,0 +1,16 @@
+body {
+    background-image: url('wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.white{
+    color:white;
+}
+
+.list{
+    display: inline;
+    list-style: none;
+    font-size: 150%;
+}
